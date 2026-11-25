@@ -1,0 +1,9 @@
+build/
+ivri-install/
+.vscode/
+/demo
+/legacy/ivri_demo
+ivri_output.txt
+*.exe
+*.o
+*.obj
