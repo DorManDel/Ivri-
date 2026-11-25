@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="מעבדת עברי++: דוגמאות מספריית C++17 שרצות בדפדפן">
+    <title>עברי++ | Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="samples.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">{ }</span><strong>עברי<span>++</span></strong></div>
+        <a href="https://github.com/DorManDel/Ivri-">הקוד ב־GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+        <header class="intro">
+            <h1>עברי++ <span>בדפדפן</span></h1>
+            <p>בחרו דוגמה מעברי++, השוו אותה ל־<bdi>C++17</bdi> והריצו אותה כאן בדפדפן.</p>
+        </header>
+        <section class="workbench" aria-label="הדגמות עברי++">
+            <header class="toolbar">
+                <div>
+                    <label for="sample">דוגמה</label>
+                    <select id="sample">
+                        <option value="basics">מיון וסכום</option>
+                        <option value="terminal">מסוף עברי</option>
+                    </select>
+                </div>
+                <button id="run" class="run" type="button"><span aria-hidden="true">▶︎</span> הרצה</button>
+            </header>
+            <p id="summary" class="summary"></p>
+            <div class="code-grid">
+                <section class="code-panel" aria-labelledby="hebrew-title">
+                    <div class="caption"><h2 id="hebrew-title">עברי++</h2><a id="source" href="https://github.com/DorManDel/Ivri-/tree/main/examples">לקובץ המקור ↗</a></div>
+                    <pre dir="ltr" tabindex="0" aria-label="קוד עברי פלוס פלוס"><code id="hebrew-code"></code></pre>
+                </section>
+                <section class="code-panel" aria-labelledby="cpp-title">
+                    <div class="caption"><h2 id="cpp-title"><bdi>C++17</bdi></h2><span>מילות המפתח אחרי ההחלפה</span></div>
+                    <pre dir="ltr" tabindex="0" aria-label="קוד עם מילות המפתח ב-C++"><code id="cpp-code"></code></pre>
+                </section>
+            </div>
+            <div class="io-grid">
+                <section class="input-panel" id="input-panel" hidden>
+                    <label for="commands">פקודות למסוף</label>
+                    <textarea id="commands" rows="6" maxlength="4096" spellcheck="false" dir="rtl" aria-describedby="command-help"></textarea>
+                    <div class="input-help"><small id="command-help">פקודה אחת בשורה. נסו להוסיף מספר חדש ולחשב שוב.</small>
+                    <button type="button" id="reset">איפוס קלט</button></div>
+                </section>
+                <section class="output-panel" aria-labelledby="output-title">
+                    <div class="caption"><h2 id="output-title">פלט</h2><output id="status" aria-live="polite"></output></div>
+                    <pre id="output" dir="rtl" tabindex="0" aria-label="פלט התוכנית"></pre>
+                </section>
+            </div>
+        </section>
+        <p class="note">הדפדפן מריץ דוגמאות שהודרו מראש ל־<bdi>WebAssembly</bdi>. במסוף אפשר לערוך את פקודות הקלט.</p>
+    </main>
+    <noscript>יש להפעיל JavaScript כדי להריץ את הדוגמאות.</noscript>
+</body>
+</html>

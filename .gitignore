@@ -1,5 +1,6 @@
 build/
 ivri-install/
+/playground/dist/
 .vscode/
 /demo
 /legacy/ivri_demo
